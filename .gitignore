@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Firebase service account credentials
+*credentials.json
+*adminsdk*.json
+serviceAccount.json
+*.serviceAccount.json

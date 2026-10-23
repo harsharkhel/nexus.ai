@@ -12,6 +12,18 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/backend/:path*",
+        destination: "http://localhost:8080/api/:path*",
+      },
+      {
+        source: "/api/conversations/:path*",
+        destination: "http://localhost:8080/api/conversations/:path*",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
